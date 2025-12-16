@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flags</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .relative{
+            width: 600px;
+            height: 300px;
+            position: relative;
+            background-color: black;
+            z-index: 1;
+
+        }
+        .zelena{
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            background-color: rgb(34, 97, 60);
+            z-index: 2;
+        
+        }
+        .crvena{
+            left: 200px;
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            background-color: #cf1126;
+            z-index: 2;
+        }
+        .zuta{
+            left: 400px;
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            background-color: #fcd116;
+        }
+        .zvijezda{
+            top: 110px;
+            left: 250px;
+            position: absolute;
+            z-index: 2;
+            width: 100px;
+            height: 100px;
+            background-color: #fcd116;
+            clip-path: polygon(
+                50% 0%,
+                61% 35%,
+                98% 35%,
+                68% 57%,
+                79% 91%,
+                50% 70%,
+                21% 91%,
+                32% 57%,
+                2% 35%,
+                39% 35%
+            );
+        }
+        .iza{
+            background-color: red;
+            width: 400px;
+            height: 300px;
+            position: relative;
+        }
+        .crv{
+            position: absolute;
+           width: 150px;
+           height: 150px;
+            background-color: rgb(255, 0, 0);
+            border-radius: 50%;
+            left: 100px;
+            top: 70px;
+            z-index: 2;
+        
+        }
+        .kruh{
+            position: absolute;
+            border-radius: 50%;
+            background-color:white;
+            width: 200px;
+            height: 200px;
+            
+            bottom: 50px;
+            left: 30px;
+
+        }
+        .zvij{
+             top: 100px;
+            left: 250px;
+            position: absolute;
+            z-index: 2;
+            width: 100px;
+            height: 100px;
+            background-color:white;
+            clip-path: polygon(
+                50% 0%,
+                61% 35%,
+                98% 35%,
+                68% 57%,
+                79% 91%,
+                50% 70%,
+                21% 91%,
+                32% 57%,
+                2% 35%,
+                39% 35%
+            );
+            left: 240px;
+            bottom: 160px;
+            transform: rotateZ(50deg);
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <h2>cameroon flag</h2>
+    <div class="relative">
+        <div class="zelena"></div>
+        <div class="crvena"></div>
+        <div class="zuta"></div>
+        <div class="zvijezda"></div>
+        
+
+    </div>
+    <div class="iza">
+        <div class="crv"></div>
+        <div class="kruh"></div>
+        <div class="zvij"></div>
+    </div>
+</body>
+</html>
