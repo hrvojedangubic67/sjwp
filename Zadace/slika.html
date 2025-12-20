@@ -3,27 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>slika</title>
 </head>
 <style>
-    .crna{
-        position: relative;
-        background-color: black;
-        height: 300px;
-        width: 400px;
-    }
+    .back {
+    background-color: #c12e33;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+}
+
+.top-black{
+    width: 0px;
+    height: 0px;
+    border-top: 80px solid #323130;
+    border-bottom: 80px solid transparent;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    left: 27%;
+    position: relative;
+}
+.bot-black{
+    width: 0px;
+    height: 0px;
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid #323130;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    left: 27%;
+    top: -64%;
+    position: relative;
+}
+
+.crveni-trok{
+    position: relative;
+    width: 0px;
+    height: 0px;
+    border-top: 65px solid #c12e33;
+    border-bottom: 65px solid #c12e33;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    top: -106.7%;
+    left: 32%;
+}
+
+.crni{
+    width: 160px;
+    height:172px;
+    position: relative;
+    background-color: #323130;
+    top: -107.4%;
+    left: 27%;
+}
+
+.crveni{
+
+    width: 115.5px;
+    height: 172px;
+    position: relative;
+    background-color: #c12e33;
+    top: -165%;
+    left: 130.3px;
+
+}
+.slika{
+    margin-bottom: 60%;
+}
+
+
+
 </style>
 <body>
-    <div>
-        <div class="crna"></div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-        <p>Original slika</p>
-        <img src="/slike/Capture.PNG" alt="original">
-    </div>
+    
+
+
+
+
+
+
+<p>Moja slika</p>
+    <div class="back">
+            <div class="top-black"></div>
+            <div class="bot-black"></div>
+            <div class="crveni-trok"></div>
+            <div class="crni"></div>
+            <div class="crveni"></div>
+            <p>Original slika</p>
+            <img class="slika" src="/slike/Capture.PNG" alt="original">
+            <!-- Ne znam zasto mi se na stranici slika povuče dolje, pregledavao sam
+              pola sata i nisam dosao do zaključka, nadam se da necete zamjeriti. -->
+            
+        </div>
 
 
 
