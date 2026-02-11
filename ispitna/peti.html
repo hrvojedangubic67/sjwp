@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.prvi{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: black;
+animation: 2s spin ease running infinite alternate;
+
+}
+.drugi{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: black;
+animation: 2s 1s spin ease running infinite ;
+margin-left: 20px;
+}
+.treci{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: black;
+animation: 2s 2s spin ease running infinite;
+
+
+}
+@keyframes spin{
+0%{
+transform: rotate(180deg);
+
+}
+100%{
+    transform: rotate(360deg);
+}
+
+
+}
+
+
+
+
+</style>
+<body>
+    
+<div class="prvi">
+    <div class="drugi"></div>
+    <div class="treci"></div>
+    <div class="cet"></div>
+</div>
+
+</body>
+</html>
