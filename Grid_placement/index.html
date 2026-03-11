@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+.box{
+    background-color: grey;
+    
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    margin: 15px;
+
+
+
+}
+.container{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(3,1fr);
+
+
+
+}
+.d{
+    order: -3;
+}
+.f{
+    order: 0;
+}
+.e{
+    order: 2;
+}
+.c{
+    order: 4;
+}
+.b{
+    order: 3;
+}
+.ba {
+    grid-column: span 2;
+    
+}
+.bb{
+    grid-row: span 2;
+}
+
+.aa{
+    grid-column: span 2;
+}
+.bB{
+    grid-row: span 2;
+}
+.e{
+    grid-row: span 2;
+    order:2;
+}
+.container1{
+    width: 1000px;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(3,1fr);
+}
+
+
+
+
+
+</style>
+<body>
+    
+<h1>prvi</h1>
+    <div class="container">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+        <div class="box">E</div>
+        <div class="box">F</div>
+    </div>
+
+    <h1>drugi</h1>
+    <div class="container">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+    </div>
+
+    <h1>treci</h1>
+    <div class="container">
+        <div class="box ba">A</div>
+        <div class="box bb">B</div>
+        <div class="box bc">C</div>
+        <div class="box bd">D</div>
+       
+    </div>
+
+    <h1>sesti</h1>
+    <div class="container1">
+        <div class="box aa">A</div>
+        <div class="box bB">B</div>
+        <div class="box cc">C</div>
+        <div class="box dd">D</div>
+        <div class="box ee">E</div>
+        
+       
+    </div>
+</body>
+</html>
