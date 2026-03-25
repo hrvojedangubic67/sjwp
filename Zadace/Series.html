@@ -3,9 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Series</title>
+    <title>Zadaca 3</title>
 </head>
+<style>
+    body{
+        background-color: midnightblue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+.btn{
+    background-color: dodgerblue;
+    border-radius: 15%;
+    margin-top: 18px;
+}
+a{
+    color:pink;
+}
+.h{
+    color: aquamarine;
+    margin-right: 1500px;
+}
+.navbar{
+    display:flex;
+    justify-content: right;
+    
+    background:rgb(54, 54, 54);
+    
+    box-shadow:0 2px 10px rgba(0,0,0,0.5);
+}
+.navbar a{
+    color:white;
+    text-decoration:none;
+    
+    font-size:18px;
+    border-radius: 50%;
+    transition:0.3s;
+}
+
+
+.navbar a:hover{
+    background:gray;
+    transform:scale(1.02);
+}
+
+
+.movies{
+  max-width:2000px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.movies-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  gap:20px;
+}
+
+.movie-card{
+  background:#0d243d;
+  padding:10px;
+  border-radius:10px;
+  border:2px dashed #3c6cff;
+  text-align:center;
+  transition:0.3s;
+}
+
+.movie-card img{
+  width:100%;
+  border-radius:8px;
+}
+
+.movie-card p{
+  color:white;
+  font-size:14px;
+  margin-top:10px;
+}
+
+.movie-card:hover{
+  transform:scale(1.05);
+  border-color:#6ea0ff;
+}
+
+
+</style>
 <body>
     
+
+
+<nav class="navbar navbar-light bg-light">
+    <h2 class="h">Streamrip</h2>
+  <form class="form-inline">
+    <button class="btn btn1" type="button"><a href="./Movies.html">Movies</a></button>
+    <button class="btn btn2" type="button"><a href="./Series.html">Series</a></button>
+    <button class="btn btn3" type="button"><a href="./Videogames.html">Videogames</a></button>
+  </form>
+</nav>
+
+<section class="movies">
+  <div class="movies-grid">
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt3581920/"><img src="https://m.media-amazon.com/images/M/MV5BYWI3ODJlMzktY2U5NC00ZjdlLWE1MGItNWQxZDk3NWNjN2RhXkEyXkFqcGc@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="avatar"></a>
+      <p>The Last Of Us(2023-)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt4158110/"><img src="https://m.media-amazon.com/images/M/MV5BOTg4NTBiZDAtZTc0YS00NzZlLTg4Y2ItNGQ3M2ZlMDM5MWQzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="rainman"></a>
+      <p>Mr Robot(2015-2019)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt0081912/"><img src="https://m.media-amazon.com/images/M/MV5BMWM4YjFhOWMtYzg1Yi00NTA2LTlmNzMtNDk3M2M1MTRiN2QyXkEyXkFqcGc@._V1_.jpg" alt="spr"></a>
+      <p>Only Fools And Horses(1981-2003)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt0903747/"><img src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/breaking_bad_4.png" alt="gwh"></a>
+      <p>Breaking Bad(2008-2013)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt0898266/"><img src="https://m.media-amazon.com/images/M/MV5BZjgzY2QyNzItNDhhYi00ZWIwLWFjN2UtZDJkN2MxYWNjMmJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt=""></a>
+      <p>The Big Bang Theory(2007-2019)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt0121955/"><img src="https://m.media-amazon.com/images/M/MV5BNTBlMzA3ZTUtODZjNi00NTM0LWExMjMtNjJhYzA3YTkwMWYwXkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" alt=""></a>
+      <p>South Park(1997-)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt0108778/"><img src="https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt=""></a>
+      <p>Friends(1994-2004)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt0092455/"><img src="https://m.media-amazon.com/images/M/MV5BMmNiNTQ2YzYtODBjYy00ZWMwLTlmNWMtYWE1NTQ2ZTYyZmMwXkEyXkFqcGc@._V1_.jpg" alt=""></a>
+      <p>Star Trek: The Next Generation(1987-1994)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt3322312/"><img src="https://m.media-amazon.com/images/M/MV5BODcwOTg2MDE3NF5BMl5BanBnXkFtZTgwNTUyNTY1NjM@._V1_.jpg" alt=""></a>
+      <p>Daredevil(2015-2018)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt2861424/"><img src="https://m.media-amazon.com/images/M/MV5BZGQyZjk2MzMtMTcyNC00NGU3LTlmNjItNDExMWM4ZDFhYmQ2XkEyXkFqcGc@._V1_.jpg" alt=""></a>
+      <p>Rick And Morty(2013-)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt8420184/"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/14/The_Last_Dance_2020.jpg/250px-The_Last_Dance_2020.jpg" alt=""></a>
+      <p>The Last Dance(2020)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt0386676/"><img src="https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt=""></a>
+      <p>The Office(2005-2013)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt0412142/"><img src="https://m.media-amazon.com/images/M/MV5BMjgxYjAwNmMtYTAwZC00YmQxLWJlOTMtMWM0NGJmNDE0YmI2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="placenici"></a>
+      <p>Dr House(2004-2012)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt5180504/"><img src="https://m.media-amazon.com/images/M/MV5BOTQzMzNmMzUtODgwNS00YTdhLTg5N2MtOWU1YTc4YWY3NjRlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt=""></a>
+      <p>The Witcher(2019-)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt1520211/"><img src="https://m.media-amazon.com/images/M/MV5BYWQwMGRhNGEtZTNhMy00MzVjLWJhMjItYjcwMDljMTkyNTg2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt=""></a>
+      <p>The Walking Dead(2010-2022)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt10919420/"><img src="https://m.media-amazon.com/images/M/MV5BYTU3ZDVhNmMtMDVlNC00MDc0LTgwNDMtYWE5MTI2ZGI4YWIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt=""></a>
+      <p>Squid Game(2021-2025)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt7587890/"><img src="https://m.media-amazon.com/images/M/MV5BMzc2MDdkZDUtZjZlYy00MGMyLWJkNzUtMTMxY2FkZjZjYmEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt=""></a>
+      <p>The Rookie(2018-)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt7235466/"><img src="https://m.media-amazon.com/images/M/MV5BYTllNGE4MjctZDI5Mi00ODEyLWFhNTUtZDUyYTBlMzMxYTBkXkEyXkFqcGc@._V1_.jpg" alt=""></a>
+      <p>911(2018-)</p>
+    </div>
+
+    <div class="movie-card">
+     <a href="https://www.imdb.com/title/tt0944947/"><img src="https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt=""></a>
+      <p>Game Of Thrones(2011-2019)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.imdb.com/title/tt6483832/"><img src="https://m.media-amazon.com/images/M/MV5BMTU4YTgzNDMtMDM0OC00NzRiLWE2MDgtZjRiMmM3ZTU3ZmJkXkEyXkFqcGc@._V1_.jpg" alt=""></a>
+      <p>The Resident(2018-2023)</p>
+    </div>
+
+    
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
 </body>
 </html>

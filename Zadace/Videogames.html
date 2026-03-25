@@ -3,9 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videogames</title>
+    <title>Zadaca 3</title>
 </head>
+<style>
+    body{
+        background-color: midnightblue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+.btn{
+    background-color: dodgerblue;
+    border-radius: 15%;
+    margin-top: 18px;
+}
+a{
+    color:pink;
+}
+.h{
+    color: aquamarine;
+    margin-right: 1500px;
+}
+.navbar{
+    display:flex;
+    justify-content: right;
+    
+    background:rgb(10, 3, 36);
+    
+    box-shadow:0 2px 10px rgba(0,0,0,0.5);
+}
+.navbar a{
+    color:white;
+    text-decoration:none;
+    
+    font-size:18px;
+    border-radius: 50%;
+    transition:0.3s;
+}
+
+
+.navbar a:hover{
+    background:gray;
+    transform:scale(1.02);
+}
+
+
+.movies{
+  max-width:2000px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.movies-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  gap:20px;
+}
+
+.movie-card{
+  background:#0d243d;
+  padding:10px;
+  border-radius:10px;
+  border:2px dashed #3c6cff;
+  text-align:center;
+  transition:0.3s;
+}
+
+.movie-card img{
+  width:100%;
+  border-radius:8px;
+}
+
+.movie-card p{
+  color:white;
+  font-size:14px;
+  margin-top:10px;
+}
+
+.movie-card:hover{
+  transform:scale(1.05);
+  border-color:#6ea0ff;
+}
+
+
+</style>
 <body>
     
+
+
+<nav class="navbar navbar-light bg-light">
+    <h2 class="h">Streamrip</h2>
+  <form class="form-inline">
+    <button class="btn btn1" type="button"><a href="./Movies.html">Movies</a></button>
+    <button class="btn btn2" type="button"><a href="./Series.html">Series</a></button>
+    <button class="btn btn3" type="button"><a href="./Videogames.html">Videogames</a></button>
+  </form>
+</nav>
+
+<section class="movies">
+  <div class="movies-grid">
+
+    <div class="movie-card">
+      <a href="https://dyinglightgame.com/"><img src="https://image.api.playstation.com/vulcan/ap/rnd/202603/0308/88baba127ff109fa6945727270c535c74ca64c94dcc2f0b8.jpg" alt="dl1"></a>
+      <p>Dying Light(2015)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.thewitcher.com/witcher3"><img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" alt="w3"></a>
+      <p>The Witcher 3: Wild Hunt(2015)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://en.wikipedia.org/wiki/Need_for_Speed_Heat"><img src="https://upload.wikimedia.org/wikipedia/en/7/7f/Cover_Art_of_Need_for_Speed_Heat.png" alt="nfsh"></a>
+      <p>Need For Speed: Heat</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://postal.fandom.com/wiki/POSTAL_2"><img src="https://m.media-amazon.com/images/M/MV5BZTQ0MzFjZjktZTVmYy00NTlhLWIyMWQtYzJmZjYxZWJmZDljXkEyXkFqcGc@._V1_.jpg" alt="postal2"></a>
+      <p>Postal 2(2003)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://borderlands.2k.com/borderlands-2/"><img src="https://cdn.loaded.com/media/catalog/product/b/o/borderlands_2_pc.png" alt="bl2"></a>
+      <p>Borderlands 2(2012)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="http://www.warframe.com/"><img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Warframe_Cover_Art.png" alt="wf"></a>
+      <p>Warframe(2013)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.half-life.com/en/halflife2"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/25/Half-Life_2_cover.jpg/250px-Half-Life_2_cover.jpg" alt="hl2"></a>
+      <p>Half-life 2(2004)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://hitman.fandom.com/wiki/Hitman:_Absolution"><img src="https://upload.wikimedia.org/wikipedia/en/b/bc/HitmanAbsolutionPackArt.jpg" alt="hitman"></a>
+      <p>Hitman: Absolution(2012)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://godofwar.fandom.com/wiki/God_of_War_Ragnar%C3%B6k"><img src="https://upload.wikimedia.org/wikipedia/en/e/ee/God_of_War_Ragnar%C3%B6k_cover.jpg" alt="god of war"></a>
+      <p>God of War Ragnarök(2022)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.deepsilver.com/games/metro-exodus"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL4oh7v9sU8cCxY_GtnLlGQDyVq2T9H9dbVQ&s" alt="metro"></a>
+      <p>Metro: Exodus(2019)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://uncharted.fandom.com/wiki/Uncharted_4:_A_Thief%27s_End"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1a/Uncharted_4_box_artwork.jpg/250px-Uncharted_4_box_artwork.jpg" alt="uncharted 4"></a>
+      <p>Uncharted 4: A Thief's End(2016)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://thelastofus.fandom.com/wiki/The_Last_of_Us_Part_I"><img src="https://upload.wikimedia.org/wikipedia/en/8/86/The_Last_of_Us_Part_I_cover.jpg" alt="tlou1"></a>
+      <p>The Last of Us Part I(2013)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://metalgear.fandom.com/wiki/Metal_Gear_Survive"><img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Metal_Gear_Survive_cover_art.jpg" alt="mgs"></a>
+      <p>Metal Gear Survive(2018)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://residentevil.fandom.com/wiki/Resident_Evil_3"><img src="https://upload.wikimedia.org/wikipedia/hr/c/c3/Resident_Evil_3_Remake_cover.jpg" alt="re3"></a>
+      <p>Resident Evil 3(2020)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://watchdogs.fandom.com/wiki/Watch_Dogs:_Legion"><img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Watch_Dogs_Legion_cover_art.webp" alt="wdl"></a>
+      <p>Watch Dogs: Legion(2020)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://www.crashbandicoot.com/nsane-trilogy"><img src="https://www.activision.com/content/dam/atvi/activision/atvi-touchui/activision/games/game-details/crash-bandicoot/nsane-trilogy/crash-nsane-trilogy-boxart.jpg" alt="crash"></a>
+      <p>Crash Bandicoot N. Sane Trilogy(2017)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://thecrew.fandom.com/wiki/The_Crew_2"><img src="https://upload.wikimedia.org/wikipedia/en/2/2b/The_Crew_2_box_art.jpg" alt="the crew 2"></a>
+      <p>The Crew 2(2018)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://left4dead.fandom.com/wiki/Left_4_Dead_2"><img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Left4Dead2.jpg" alt="l4d2"></a>
+      <p>Left 4 Dead 2(2009)</p>
+    </div>
+
+    <div class="movie-card">
+     <a href="https://cry-of-fear.fandom.com/wiki/Cry_of_Fear"><img src="https://m.media-amazon.com/images/M/MV5BNmY1ZTJjNTUtMDQ3NC00MGQxLTljNGItMGZjMTIxYTZhZGEwXkEyXkFqcGc@._V1_QL75_UY281_CR46,0,190,281_.jpg" alt="cof"></a>
+      <p>Cry Of Fear(2012)</p>
+    </div>
+
+    <div class="movie-card">
+      <a href="https://ghostfranchise.fandom.com/wiki/Ghost_of_Tsushima"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Ghost_of_Tsushima.jpg/250px-Ghost_of_Tsushima.jpg" alt="got"></a>
+      <p>Ghost of Tsushima(2020)</p>
+    </div>
+
+    
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
