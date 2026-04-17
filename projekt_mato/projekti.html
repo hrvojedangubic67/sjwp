@@ -141,54 +141,186 @@
 .nav-links a:hover {
   color: #ffb6b6;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e9f1f7;
+}
+
+/* HEADER */
+header {
+    background: #1f6f8b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* gornji dio kod ovog projekti skole */
+.hero {
+    background: linear-gradient(to right, #1f6f8b, #99c1de);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* kartice */
+.projekti {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #1f6f8b;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    background: #1f6f8b;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #155d74;
+}
+
+/* INFO */
+.info {
+    background: white;
+    margin: 40px;
+    padding: 30px;
+    border-left: 5px solid #1f6f8b;
+    margin-bottom: 119px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f6f8b;
+    color: white;
+}
+.treci{
+font-size: large;
+
+}
+.href22{
+color: white;
+
+}
   </style>
 </head>
 <body>
-<h1>projekti</h1>
-<div class="container">
-    <nav class="navbar">
-        <div class="logo-box">
-            <div class="logo"><img width="20px" height="20px" src="https://tssb.hr/wp-content/uploads/2015/03/TSLogo_small_notext.png" alt="tssb"></div>
-            
-          </div>
-        <div class="nav-container">
-          <div class="logo-text">Tšsb</div>
-          <div class="nav-links">
-            <a href="./index34.html">Početna</a>
-            <a href="./onama.html">O nama</a>
-            <a href="./zanimanja.html">Zanimanja</a>
-            <a href="./projekti.html">Projekti</a>
-          </div>
-        </div>
-      </nav>
-  
-  <h1>Tehnička škola Slavonski Brod</h1>
-
-  <p>Osnivanje Tehničke škole u Slavonskom Brodu usko je vezano uz kraj 2. svjetskog rata i nagli razvoj tvrtke “Đuro Đaković”. Ta je tvrtka potraživala veliki broj stručnjaka tehničkog profila što je nametnulo potrebu osnivanja škole.</p>
-  
-    <div class="image-box">
-    <img width="700px" height="350px" src="" alt="tšsb">
-  </div>
 
 
-  
 
-  <h3>Another subheader to break up text</h3>
-  <p>Tehnička škola Slavonski Brod se nalazi u ulici Eugena Kumičića 55.</p>
 
-  <div class="big-text">
-    veliki tekst placeholder veliki tekst placeholder veliki tekst placeholder
-  </div>
+<header>
+    <div class="logo"><img width="40px" height="40px" src="https://tssb.hr/wp-content/uploads/2015/03/TSLogo_small_notext.png" alt="tšsb"></div>
+    <nav>
+        <a href="/projekt_mato/index34.html">Početna</a>
+        <a href="/projekt_mato/onama.html">O školi</a>
+        <a href="/projekt_mato/zanimanja.html">Zanimanja</a>
+        <a href="/projekt_mato/projekti.html">Projekti</a>
+    </nav>
+</header>
 
-  
+<section class="hero">
+    <h1>Projekti škole</h1>
+    <p class="treci">Inovacije, tehnologija i međunarodna suradnja</p>
+</section>
 
-  <h3>Last subheader, for good measure</h3>
-  <p class="footer-text">
-    Finalni dio teksta. Ovo je primjer dužeg paragrafa koji simulira pravi sadržaj.
-    Možeš ga proširiti, dodati linkove, slike ili sekcije po potrebi.
-  </p>
-  <div class="date">13. travnja 2026.</div>
-</div>
+<section class="projekti">
+
+    <div class="card">
+        <h2>Slavonika 5.1</h2>
+        <p>Regionalni centar kompetentnosti koji razvija suvremeno obrazovanje u strojarstvu i tehnici.</p>
+        <img width="400px" height="400px" src="/slike/Capture3.PNG" alt="rck 5.1"><br>
+        <button><a class="href22" href="https://tssb.hr/regionalni-centar-kompetentnosti-slavonika-5-1/">Više</a></button>
+    </div>
+
+    <div class="card">
+        <h2>Erasmus+ projekt Kompas 7</h2>
+        <p>Projekt razmjene učenika i profesora kroz međunarodnu suradnju i mobilnost.</p>
+        <img width="400px" height="400px" src="https://tssb.hr/wp-content/uploads/2025/09/KOMPAS-7.jpg" alt="erasmus k7">
+        <button><a class="href22" href="https://tssb.hr/erasmus-projekt-kompas-7/">Više</a></button>
+    </div>
+
+    <div class="card">
+        <h2>Digitalni inkubator</h2>
+        <p>Razvoj kreativnih i apstraktnih vještina učenika kroz praktične projekte i inovacije.</p>
+        <img width="400px" height="400px" src="https://tssb.hr/wp-content/uploads/2021/04/161557837_1588080748047111_5038019070617443649_n.jpg" alt="diginkubator">
+        <button><a class="href22" href="https://tssb.hr/digitalni-ucenicki-inkubator/">Više</a></button>
+    </div>
+
+    <div class="card">
+        <h2>Školski volonteri</h2>
+        <p>Razvoj i poticanje volonterskih projekata kroz organizirane volonterske
+aktivnosti učenika.</p>
+        <img width="400px" height="400px" src="http://tssb.hr/wp-content/uploads/2017/11/esf_skolski_volonteri.jpg" alt="kvalskola">
+        <button><a class="href22" href="">Više</a></button>
+    </div>
+
+</section>
+
+<section class="info">
+    <h2>Zašto projekti?</h2>
+    <p>
+        Projekti omogućuju učenicima stjecanje praktičnih znanja, rad na stvarnim problemima
+        i razvoj vještina potrebnih za tržište rada.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Tehnička škola Slavonski Brod</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
 
 </body>
 </html>
