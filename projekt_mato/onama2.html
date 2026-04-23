@@ -9,63 +9,69 @@
   body {
   margin: 0;
   font-family: Arial;
-  background: #f4f7fb;
+  background: #92c1ff;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* NAVBAR */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background: #0b74d1;
-  padding: 15px 30px;
-  color: white;
-}
 
-.navbar a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-}
 
 /* HERO */
 .hero {
   padding: 70px;
   text-align: center;
-  background: white;
+  font-size: 30px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff, #8e2de2);
+
 }
 
 /* ABOUT */
 .about {
   padding: 40px;
-  max-width: 900px;
-  margin: auto;
+  
+  font-size: 25px;
+  
+
 }
 
 /* TIMELINE (horizontal stacked) */
 .timeline {
-  background: #e9f2ff;
+  background: linear-gradient(135deg, #23f7e5d0, #0072ff, #951ffc);
   padding: 40px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
 }
 
 .timeline-item {
-  background: white;
-  margin: 15px auto;
+  background: rgb(140, 0, 255);
+  margin: 15px;
   padding: 20px;
-  border-left: 5px solid #0b74d1;
-  max-width: 700px;
+  border-left: 6px solid #000000;
+  max-width: 1000px;
+}
+
+.h22{
+  color: #000000d0;
 }
 
 /* PROGRAMI */
 .programs {
   padding: 40px;
+  background: linear-gradient(135deg, #23f7e5d0, #0072ff, #951ffc);
 }
 
+
+
 .program {
-  background: white;
-  margin: 15px auto;
+  background: linear-gradient(135deg, #900ce7d0, #0072ff, #0af098);
+  margin-bottom: 15px;
   padding: 20px;
-  max-width: 700px;
+  max-width: 1200px;
   border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  border-left: 6px solid #ffffff;
+  font-weight: 600  ;
 }
 
 /* STATISTIKA */
@@ -86,17 +92,69 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: #11b5e4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* logo + naziv bliže */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* manje razmaka */
+}
+
+.nav-left img {
+  width: 35px;
+}
+
+.nav-left h2 {
+  font-size: 18px;
+}
+
+/* linkovi skroz desno */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  margin-left: auto;
+  margin-right: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+a:hover{
+color: #8e2de2;
+font-size: 105%;
+
+
+}
+
 </style>
 <body>
 
 <header class="navbar">
-  <div class="logo">TŠSB</div>
-  <nav>
-    <a href="#">Početna</a>
-    <a href="#">O školi</a>
-    <a href="#">Zanimanja</a>
-    <a href="#">Projekti</a>
-  </nav>
+  <div class="navbar">
+  <div class="nav-left">
+    <img src="https://tssb.hr/wp-content/uploads/2015/03/TSLogo_small_notext.png" alt="logo">
+    <h2>TŠSB</h2>
+  </div>
+
+  <div class="nav-links">
+            <a href="./index34.html">Početna</a>
+            <a href="./onama2.html">O školi</a>
+            <a href="./zanimanja2.html">Zanimanja</a>
+            <a href="./projekti.html">Projekti</a>
+          </div>
+</div>
 </header>
 
 <section class="hero">
@@ -107,14 +165,14 @@ footer {
 <section class="about">
   <h2>O školi</h2>
   <p>
-    Škola je osnovana 1948. godine kako bi odgovorila na potrebe industrije.
+    Tehnička škola Slavonski Brod je osnovana 1948. godine kako bi odgovorila na potrebe industrije.
     Tijekom desetljeća razvila se u modernu ustanovu koja obrazuje stručnjake
-    u području strojarstva, elektrotehnike, graditeljstva i prometa.
+    u području strojarstva, elektrotehnike, graditeljstva i prometa. Od svojih početaka pa do danas, predstavlja važan centar tehničkog obrazovanja, stvarajući stručnjake koji doprinose razvoju industrije i tehnologije u Hrvatskoj, ali i širom cijeloga svijeta.
   </p>
 </section>
 
 <section class="timeline">
-  <h2>Povijesni razvoj</h2>
+  <h2 class="h22">Povijesni razvoj</h2>
 
   <div class="timeline-item">
     <span>1948</span>
@@ -144,7 +202,7 @@ footer {
 </section>
 
 <section class="programs">
-  <h2>Obrazovni programi</h2>
+  <h2 class="h2n">Obrazovni programi</h2>
 
   <div class="program">
     <h3>Strojarstvo</h3>
@@ -185,6 +243,7 @@ footer {
 
 <footer>
   <p>© Tehnička škola Slavonski Brod</p>
+  <p>24. travnja 2026.</p>
 </footer>
 
 </body>
