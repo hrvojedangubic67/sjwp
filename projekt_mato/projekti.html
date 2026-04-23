@@ -9,7 +9,7 @@
       background: #52baff;
       margin: 0;
       padding: 0;
-      color: #222;
+      
       
     }
 
@@ -139,7 +139,7 @@
 }
 
 .nav-links a:hover {
-  color: #ffb6b6;
+  color: #a620ff;
 }
 * {
     margin: 0;
@@ -179,10 +179,12 @@ nav a:hover {
 
 /* gornji dio kod ovog projekti skole */
 .hero {
-    background: linear-gradient(to right, #1f6f8b, #99c1de);
+    background: linear-gradient(135deg, #23f7e5d0, #0072ff, #2a00e4);
     color: white;
     text-align: center;
     padding: 60px 20px;
+    font-size: 30px;
+
 }
 
 /* kartice */
@@ -231,6 +233,7 @@ nav a:hover {
     padding: 30px;
     border-left: 5px solid #1f6f8b;
     margin-bottom: 119px;
+    font-size: 25px;
 }
 
 /* FOOTER */
@@ -242,6 +245,7 @@ footer {
 }
 .treci{
 font-size: large;
+color: #ffffff;
 
 }
 .href22{
@@ -253,6 +257,49 @@ color: white;
   height: 350px;
 
 }
+.mango{
+  font-size: medium;
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: rgb(50, 98, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* logo + naziv bliže */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* manje razmaka */
+}
+
+.nav-left img {
+  width: 35px;
+}
+
+.nav-left h2 {
+  font-size: 18px;
+}
+
+/* linkovi skroz desno */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  margin-left: auto;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.tssb{
+  color: #f5f5f5;
+}
   </style>
 </head>
 <body>
@@ -260,15 +307,19 @@ color: white;
 
 
 
-<header>
-    <div class="logo"><img width="40px" height="40px" src="https://tssb.hr/wp-content/uploads/2015/03/TSLogo_small_notext.png" alt="tšsb"></div>
-    <nav>
-        <a href="./index34.html">Početna</a>
+<div class="navbar">
+  <div class="nav-left">
+    <img src="https://tssb.hr/wp-content/uploads/2015/03/TSLogo_small_notext.png" alt="logo">
+    <h2 class="tssb">TŠSB</h2>
+  </div>
+
+  <div class="nav-links">
+            <a href="./index34.html">Početna</a>
             <a href="./onama2.html">O školi</a>
             <a href="./zanimanja2.html">Zanimanja</a>
             <a href="./projekti.html">Projekti</a>
-    </nav>
-</header>
+          </div>
+</div>
 
 <section class="hero">
     <h1>Projekti škole</h1>
@@ -310,7 +361,7 @@ aktivnosti učenika.</p>
 
 <section class="info">
     <h2>Zašto projekti?</h2>
-    <p>
+    <p class="mango">
         Projekti omogućuju učenicima stjecanje praktičnih znanja, rad na stvarnim problemima
         i razvoj vještina potrebnih za tržište rada.
     </p>
@@ -328,5 +379,3 @@ aktivnosti učenika.</p>
 
 
 
-</body>
-</html>
