@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad 5</title>
+</head>
+<style>
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.card {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;   
+  text-align: center;
+  
+}
+.a{
+    grid-column: span 2;
+}
+
+
+
+@media (min-width: 768px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+</style>
+<body>
+    <div class="products">
+  <div class="card a">Korisnici</div>
+  <div class="card">Prodaja</div>
+  <div class="card">Poruke</div>
+  <div class="card">Statistika</div>
+  <div class="card">Zadaci</div>
+  <div class="card a">Postavke</div>
+  
+</div>
+</body>
+</html>
